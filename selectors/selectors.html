@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="selectors.css">
+    <style>
+        input[type="text"]{
+            border: 1px solid brown;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        input[type="date"]{
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            border: 2px solid blue;
+        }
+        h1[id*="heading"]{
+            color: aqua;
+
+        }
+        div{
+            color: aquamarine !important;
+        }
+        .myClass{
+            color: blueviolet;
+        }
+        #myDiv{
+            color: purple;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(220, 209, 209);">
+    <h1>heading</h1>
+    <h1 id="ex">this is heading</h1>
+    <h2 class="heading1">this is another heading</h2>
+    <h2 class="heading2 heading1">this is another heading</h2>
+    <h2 class="heading heading2">this is another heading</h2>
+    <h2 class="heading2">this is another heading</h2>
+    <h3 class="heading3">this is h3 heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit, ab illo natus aliquid inventore ea ut temporibus deserunt aspernatur nisi obcaecati unde illum autem sint soluta veritatis excepturi placeat?</p>
+    <h1>attribute selector</h1>
+    <input type="text" name="" id="">
+    <input type="date" name="" id="">
+    <h1 id="heading-1">heading 1</h1>
+    <h1 id="heading-2">heading 2</h1>
+    <h1 id="heading-3">heading 3</h1>
+    <h1 id="heading-4">heading 4</h1>
+    <h1 id="heading-5">heading 5</h1>
+    <h1 id="heading-6">heading 6</h1>
+    <h1 id="heading-7">heading 7</h1>
+    <h1 id="heading-8">heading 8</h1>
+    <h1 id="heading-9">heading 9</h1>
+    <h1 id="heading-10">heading 10</h1>
+    <div id="myDiv" class="myClass">div element</div>
+        <h1>
+            specificity of selector
+        </h1>
+</body>
+</html>

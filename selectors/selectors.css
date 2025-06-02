@@ -1,0 +1,44 @@
+*{
+    color: #334155;
+    margin: 0;  
+}
+h1{
+    color: brown;
+}
+#ex{
+    box-sizing: border-box;
+    color:chartreuse;
+    background-color: bisque;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    place-content: center;
+    margin: 10px;
+}
+.heading1 {
+    background-color:cornflowerblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: crimson;
+    margin: 10px;
+}
+.heading3{
+    color:darkorange;
+    margin: 10px;
+}
+.heading2{
+     box-sizing: border-box;
+    color:blue;
+    background-color:brown;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    place-content: center;
+    margin: 10px;
+}
