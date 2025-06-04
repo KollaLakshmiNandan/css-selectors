@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<style>
+    a:link {
+      color: green;
+    }
+
+    a:visited {
+      color: gray;
+    }
+    .hover-effect:hover{
+        background-color: lightblue;
+        color: darkblue;
+    }
+    .active-effect:active{
+        background-color: darkred;
+        color: white;
+    }
+    #myInput:focus{
+        border: 2px solid orange;
+        box-shadow: 2px 2px 2px 2px rgb(191, 163, 111);
+    }
+    ul li:first-child {
+      font-weight: bold;
+      background-color: #d4edda; /* light green */
+    }
+    p:last-child{
+        background-color: lightgray;
+        padding: 10px;
+    }
+    /* Apply background only to even-numbered rows including header */
+    tr:nth-child(even) {
+      background-color: #ffffcc; /* Light yellow */
+    }
+    .not
+    p:nth-of-type(2){
+      font-style: italic;
+      background-color: plum;
+    }
+    .oc
+    p:only-child{
+      border:2px dashed green;
+      background-color: lightgreen;
+    }
+    .oot
+    li:only-of-type{
+      background-color: gold;
+    }
+    .ee
+    span:empty{
+      height: 20px;
+      width: 50px;
+      display: inline-block;
+      background-color: lightcoral;
+      border: 1px solid black;
+    }
+    .n
+    .sub{
+      background-color: blue;
+      color: white;
+    }
+    .cancel{
+      background-color: gray;
+      color: black;
+    }
+    input[type=checkbox]:checked+label{
+      font-weight: bold;
+      color: green;
+    }
+    input[type=text]:disabled{
+      background-color: lightgrey;
+      cursor: not-allowed;
+    }
+    textarea:enabled{
+      border: 1px solid lightblue;
+    }
+    #comments:focus{
+      border: 1px solid orange;
+      box-shadow: 2px 2px 2px 2px orange;
+    }
+    input:required{
+      border: 1px solid red;
+      box-shadow: 2px 2px 2px 2px red;
+    }
+    .o
+    input:optional{
+      border: 2px solid green;
+
+    }
+    #section-highlight:target{
+      background-color: yellow;
+      border: 2px solid orange;
+    }
+    .input-group:focus-within{
+      background-color: lightblue;
+      border: 5px solid orchid;
+    }
+    p:lang(es){
+      color: darkorange;
+
+    }
+    </style>
+<body>
+    <h4>1. Link States:</h4>
+    <p><a href="https://www.example.com">Example Link (try visiting)</a></p>
+    <hr><hr>
+    <p><a href="https://www.nonexistentlink123abc.com">Likely Unvisited Link</a></p>
+    <hr><hr>
+    <h4>2. Hover State:</h4>
+    <button class="hover-effect">Hover Over Me</button><br>
+    <hr><hr>
+    <h4>3. Active State:</h4>
+    <button class="active-effect">Click and Hold Me</button><br>
+    <hr><hr>
+    <h4>4. focus state:</h4>
+    <input type="text" name="" id="myInput" placeholder="Click Here">
+    <hr><hr>
+    <h4>5. First Child:</h4>
+    <ul>
+        <li>First Item(Styled)</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+    <ul>
+        <li>Another First Item (Styled)</li>
+        <li>Another Second Item</li>
+    </ul>
+    <hr><hr>
+    <h4>6. Last Child:</h4>
+    <div>
+    <p>This is the first paragraph in the div.</p>
+    <p>This is the second paragraph in the div.</p>
+    <p>This is the last paragraph (Styled).</p>
+  </div>
+  <hr>
+  <div>
+    <p>Another first paragraph.</p>
+    <p>Another last paragraph (Styled).</p>
+  </div>
+  <hr><hr>
+  <h4>7. Nth Child (Even):</h4>
+   <table>
+    <tr><th>Header 1</th><th>Header 2</th></tr>
+    <tr><td>Row 1, Cell 1</td><td>Row 1, Cell 2</td></tr>
+    <tr><td>Row 2, Cell 1 (Styled)</td><td>Row 2, Cell 2</td></tr>
+    <tr><td>Row 3, Cell 1</td><td>Row 3, Cell 2</td></tr>
+    <tr><td>Row 4, Cell 1 (Styled)</td><td>Row 4, Cell 2</td></tr>
+  </table>
+  <hr><hr>
+  <h4>8. Nth of Type:</h4>
+  <div class="not">
+  <div>
+    <p>First Paragraph.</p>
+    <p>Second Paragraph (styled).</p>
+    <h3>A heading in between</h3>
+    <p>Third paragraoh (this is the 3rd 'p' overall, but not styled by this rule).</p>
+  </div>
+  <hr>
+  <div>
+    <h3>Another heading</h3>
+    <p>First paragraph in new div.</p>
+    <p>Second paragraph in new div (styled).</p>
+  </div>
+  </div>
+  <hr><hr>
+  <h4>9. Only Child:</h4>
+  <div class="oc">
+  <div>
+    <p>This paragraph is the only child (styled).</p>
+  </div>
+  <hr>
+  <div>
+    <p>This paragraph is NOT the only child.</p>
+    <span>This is a sibling span</span>
+  </div>
+  </div>
+  <hr>
+  <hr>
+  <h4>10. Only of Type:</h4>
+  <div class="oot">
+  <ul>
+    <h3>List with one item</h3>
+    <li>The only list item (styled).</li>
+  </ul>
+  <hr>
+  <ul>
+    <h3>List with multiple items</h3>
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+  </div>
+  <hr><hr>
+  <h4>11. Empty Element:</h4>
+  <div class="ee">
+  <p>Empty span: <span class="empty-demo"></span>(styled)</p>
+  <p>Span with text: <span class="empty-demo">Not Empty</span></p>
+  <p>Span with space: <span class="empty-demo"> </span></p>
+  </div>
+  <hr><hr>
+  <h4>12. Negation:</h4>
+  <div class="n">
+  <button class="sub">Submit (Styled by :not)</button>
+  <button class="cancel">Cancel (Styled by .cancel)</button>
+  <button class="sub">Confirm (Styled by :not)</button>
+  </div>
+  <hr><hr>
+  <h4>13. Checked State:</h4>
+  <input type="checkbox" id="terms">
+  <label for="terms">I agree to the terms and conditions.</label>
+  <br>
+  <input type="checkbox" id="newsletter">
+  <label for="newsletter">Subscribe to newsletter.</label>
+  <hr><hr>
+  <h4>14. Disabled State:</h4>
+  <label for="name">Name:</label>
+  <input type="text" id="name" value="Editable">
+  <br><br>
+  <label for="username">Username:</label>
+  <input type="text" id="username" value="FixedUser" disabled>
+  <hr><hr>
+  <h4>15. Enabled State:</h4>
+  <label for="comments">Comments (Enabled):</label><br>
+  <textarea id="comments" rows="3" cols="30"></textarea>
+  <br><br>
+  <label for="notes">Notes (Disabled):</label><br>
+  <textarea id="notes" rows="3" cols="30" disabled>Cannot edit.</textarea>
+  <hr><hr>
+  <h4>16. Required Fields:</h4>
+  <form>
+    <label for="email">Email (Required):</label>
+    <input type="email" id="email" required>
+    <br><br>
+    <label for="phone">Phone (Optional):</label>
+    <input type="tel" id="phone">
+  </form>
+  <hr><hr>
+  <h4>17. Optional Fields:</h4>
+  <div class="o">
+  <form>
+    <label for="name">Name (Required):</label>
+    <input type="text" id="name" required>
+    <br><br>
+    <label for="nickname">Nickname (Optional):</label>
+    <input type="text" id="nickname" placeholder="e.g., Buddy">
+  </form>
+  </div>
+  <hr><hr>
+  <h4>18. Target Element:</h4>
+  <a href="#section-highlight">Jump to Highlighted Section</a>
+  <div style="height: 200px;"><!-- Spacer --></div>
+  <div id="section-normal" class="section">This is a normal section.</div>
+  <div id="section-highlight" class="section">This section will be highlighted when targeted.</div>
+  <div style="height: 200px;"><!-- Spacer --></div>
+  <hr><hr>
+  <h4>19. Focus Within Container:</h4>
+  <div class="input-group">
+    <label for="field1">Field 1:</label>
+    <input type="text" id="field1">
+    <br><br>
+    <label for="field2">Field 2:</label>
+    <input type="text" id="field2">
+  </div>
+  <br>
+  <div class="input-group">
+    <label for="field3">Field 3:</label>
+    <input type="text" id="field3">
+  </div>
+  <hr><hr>
+  <h4>20. Language Specific:</h4>
+  <p lang="en">This is a paragraph in English.</p>
+  <p lang="es">Este es un párrafo en español. (Styled)🏳️‍⚧️</p>
+  <p lang="fr">Ceci est un paragraphe en français.</p>
+  <hr><hr>
+</body>
+</html>
+
